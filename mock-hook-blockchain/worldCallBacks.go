@@ -14,7 +14,7 @@ var _ vmcommon.BlockchainHook = (*BlockchainHookMock)(nil)
 
 var zero = big.NewInt(0)
 
-// NewAddress adapts between K model and elrond function
+// NewAddress adapts between K model and numbat function
 func (b *BlockchainHookMock) NewAddress(creatorAddress []byte, creatorNonce uint64, _ []byte) ([]byte, error) {
 	// explicit new address mocks
 	for _, newAddressMock := range b.NewAddressMocks {
