@@ -2,8 +2,8 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/numbatx/gn-bigint v0.0.0 h1:6ZxH/dCPoo5L5FV/06ZwadXi6U97jGy/N8BPHSEd/Wo=
 github.com/numbatx/gn-bigint v0.0.0/go.mod h1:NFLJFMMWMo6CLfMxUT6WbO3giI96kyQ5+j2dyQnktPk=
-github.com/numbatx/gn-vm-common v0.0.3 h1:uvO4X7FuGfcB6yxFQc4swYsxD2zH6bnLa9TACwGS/HE=
-github.com/numbatx/gn-vm-common v0.0.3/go.mod h1:y4FuiClb9PF5CCWjKoFiz0vGeDrgmDbMJwmqOW+B5Xc=
+github.com/numbatx/gn-vm-common v0.0.4 h1:2iqXThiquYoWclzTe62fU3+QZLbqVxP6z7UCn5qVeQU=
+github.com/numbatx/gn-vm-common v0.0.4/go.mod h1:y4FuiClb9PF5CCWjKoFiz0vGeDrgmDbMJwmqOW+B5Xc=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/testify v1.9.0 h1:HtqpIVDClZ4nwg75+f6Lvsy/wHu+3BoSGCbBAcpTsTg=

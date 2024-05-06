@@ -12,7 +12,7 @@ var _ vmcommon.BlockchainHook = (*BlockchainHookMock)(nil)
 
 var zero = big.NewInt(0)
 
-// NewAddress adapts between K model and numbat function
+// NewAddress adapts between K model and numbatx function
 func (b *BlockchainHookMock) NewAddress(creatorAddress []byte, creatorNonce uint64, _ []byte) ([]byte, error) {
 	// explicit new address mocks
 	for _, newAddressMock := range b.NewAddressMocks {
@@ -182,4 +182,18 @@ func (b *BlockchainHookMock) IsSmartContract(address []byte) bool {
 	}
 
 	return account.IsSmartContract
+}
+
+func (b *BlockchainHookMock) IsPayable(address []byte) (bool, error) {
+	account := b.AcctMap.GetAccount(address)
+	if account == nil {
+		return true, nil
+	}
+
+	if !account.IsSmartContract {
+		return true, nil
+	}
+
+	metadata := vmcommon.CodeMetadataFromBytes(account.CodeMetadata)
+	return metadata.Payable, nil
 }
