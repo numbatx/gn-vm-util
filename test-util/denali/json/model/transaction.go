@@ -14,7 +14,7 @@ const (
 	Transfer
 
 	// ValidatorReward is when the protocol sends a validator reward to the target account.
-	// It increases the balance, but also increments "NUMBAT_Reward" in storage.
+	// It increases the balance, but also increments "NUMBATX_Reward" in storage.
 	ValidatorReward
 )
 

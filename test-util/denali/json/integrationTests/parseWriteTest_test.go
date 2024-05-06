@@ -37,7 +37,6 @@ func TestWriteTest(t *testing.T) {
 	}
 
 	testTopLevel, parseErr := p.ParseTestFile(contents)
-
 	require.Nil(t, parseErr)
 
 	serialized := mjwrite.TestToJSONString(testTopLevel)

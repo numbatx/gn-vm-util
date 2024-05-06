@@ -10,9 +10,12 @@ import (
 
 // ParseScenarioFile converts a scenario json string to scenario object representation
 func (p *Parser) ParseScenarioFile(jsonString []byte) (*mj.Scenario, error) {
+
 	jobj, err := oj.ParseOrderedJSON(jsonString)
 	if err != nil {
-		return nil, err
+		fmt.Println("=================================================")
+		fmt.Println("the error is :", err)
+		//return nil, err
 	}
 
 	topMap, isMap := jobj.(*oj.OJsonMap)
